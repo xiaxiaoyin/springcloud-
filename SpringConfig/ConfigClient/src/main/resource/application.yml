@@ -1,0 +1,10 @@
+server:
+  port: 7002
+
+spring:
+  #RabbitMQ配置
+  rabbitmq:
+    host: localhost
+    poort: 15672
+    username: guest
+    password: guest

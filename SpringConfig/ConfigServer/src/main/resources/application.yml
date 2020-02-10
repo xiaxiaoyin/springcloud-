@@ -1,0 +1,34 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaxiaoyin/springcloudconfig.git
+          searchPaths: configrepo
+          username: 674000956@qq.com
+          password: 19920129Yang
+        label: master
+  #安全配置 登录账号
+  security:
+    user:
+      name: user
+      password: 121212
+
+  #消息总线集成RabbitMQ
+  rabbitmq:
+      host: localhost
+      poort: 15672
+      username: guest
+      password: guest
+
+#开启消息总线配置信息刷新接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

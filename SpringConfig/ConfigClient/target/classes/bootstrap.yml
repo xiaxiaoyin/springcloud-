@@ -1,0 +1,12 @@
+spring:
+  application:
+    #配置文件名
+    name: didispace
+  cloud:
+    config:
+      profile: pro
+      label: master
+      uri: http://localhost:7001/
+      #安全登录账号密码
+      username: user
+      password: 121212
